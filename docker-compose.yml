@@ -1,0 +1,8 @@
+services:
+  parcel-resolver:
+    build: .
+    image: parcel-resolver:latest
+    container_name: parcel-resolver
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
