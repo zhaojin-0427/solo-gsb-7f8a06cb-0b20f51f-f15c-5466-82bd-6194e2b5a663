@@ -1,0 +1,8 @@
+services:
+  api:
+    build: .
+    image: parcel-overlay-adjudicator
+    container_name: parcel-overlay-adjudicator
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
